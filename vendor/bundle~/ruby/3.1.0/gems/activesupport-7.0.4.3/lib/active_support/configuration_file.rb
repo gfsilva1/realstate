@@ -20,9 +20,9 @@ module ActiveSupport
 
     def parse(context: nil, **options)
       source = render(context)
-      if YAML.respond_to?(:unsafe_load)
-        YAML.unsafe_load(source, **options) || {}
-      else
+      begin
+        YAML.load(source, aliases: true, **options) || {}
+      rescue ArgumentError
         YAML.load(source, **options) || {}
       end
     rescue Psych::SyntaxError => error

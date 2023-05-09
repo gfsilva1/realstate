@@ -1,5 +1,5 @@
 current directory: /Users/guilherme.t.silva/Documents/gui/basket/green-basket/vendor/bundle~/ruby/3.1.0/gems/pg-1.5.3/ext
-/Users/guilherme.t.silva/.rbenv/versions/3.1.0/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.0/lib/ruby/3.1.0 -r ./siteconf20230509-92826-4wc0l9.rb extconf.rb
+/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20230509-7758-238kcc.rb extconf.rb
 Calling libpq with GVL unlocked
 checking for pg_config... yes
 Using config values from /usr/local/bin/pg_config
@@ -60,5 +60,5 @@ ld: warning: -undefined dynamic_lookup may not work with chained fixups
 
 current directory: /Users/guilherme.t.silva/Documents/gui/basket/green-basket/vendor/bundle~/ruby/3.1.0/gems/pg-1.5.3/ext
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20230509-92826-euzclj
+/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20230509-7758-bece6x
 installing pg_ext libraries

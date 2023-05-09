@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "time"
+require "time"
 
 module ActiveSupport
   module Messages # :nodoc:
