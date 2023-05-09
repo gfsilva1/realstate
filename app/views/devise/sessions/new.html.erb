@@ -3,11 +3,7 @@
     <div class='row full-height justify-content-center'>
       <div class='col-12 text-center align-self-top pt-5'>
         <div class='section pb-1 pt-5 text-center'>
-        <h6 class='mb-0 pb-3'><span>Log In</span><span>Sign Up</span></h6>
-        <label class="switch">
-          <input type="checkbox" class='checkbox' data-url='<%=new_registration_path(resource_name)%>'>
-          <span class="slider round"></span>
-        </label>
+        <h6 class='mb-0 pb-3'><span>Não tem login? <%= link_to "Cadastre", new_user_registration_path %></span></h6>
         <br>
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="form-inputs">

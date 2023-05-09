@@ -25,20 +25,20 @@ https://images.unsplash.com/photo-1565809655810-3973da946da1?ixid=MnwxMjA3fDB8MH
 
 <% if current_user.consumer? %>
   <div class="orders">
-    <h1>My Green Orders</h1>
+    <h1>Minhas propostas</h1>
     <% if @orders.count == 0 %>
-      <p>You don't have any order yet...</p>
+      <p>Você não fez propostas ainda</p>
       <div class="container text-center">
         <%= link_to baskets_path, class: 'btngui', :action => 'go' do %>
-          <button>Check out the available baskets!</button>
+          <button>Veja os imóveis</button>
         <% end%>
       </div>
     <% else %>
     <div class="filter-buttons">
 
-      <button class="btngui" id="request-btn" data-toggle="button" aria-pressed="true" autocomplete="off"> Requested</button>
-      <button class="btngui" id="confirm-btn" data-toggle="button" aria-pressed="true" autocomplete="off"> Confirmed</button>
-      <button class="btngui" id="cancel-btn" data-toggle="button" aria-pressed="true" autocomplete="off"> Cancelled</button>
+      <button class="btngui" id="request-btn" data-toggle="button" aria-pressed="true" autocomplete="off"> Feitas</button>
+      <button class="btngui" id="confirm-btn" data-toggle="button" aria-pressed="true" autocomplete="off"> Aceitas</button>
+      <button class="btngui" id="cancel-btn" data-toggle="button" aria-pressed="true" autocomplete="off"> Declinadas</button>
     </div>
 
       <div class="orders-flex-box">
@@ -66,18 +66,18 @@ https://images.unsplash.com/photo-1565809655810-3973da946da1?ixid=MnwxMjA3fDB8MH
 
 <% else%>
   <div class="baskets">
-    <h2>My Baskets</h2>
+    <h2>Meus imóveis</h2>
     <% if @baskets.count == 0 %>
-      <p>You don't have any published baskets yet.</p>
+      <p>Você ainda não tem imóveis.</p>
       <div class="container text-center">
         <%= link_to new_basket_path, class: 'btngui', :action => 'go' do %>
-          <button>Publish a new basket!</button>
+          <button>Publique um imóvel</button>
         <% end%>
       </div>
     <% else %>
       <div class="filter-buttons">
-        <button class="btn btn-outline-primary" id="reserved-btn" data-toggle="button" aria-pressed="true" autocomplete="off"> Reserved</button>
-        <button class="btn btn-outline-primary" id="available-btn" data-toggle="button" aria-pressed="true" autocomplete="off"> Available</button>
+        <button class="btn btn-outline-primary" id="reserved-btn" data-toggle="button" aria-pressed="true" autocomplete="off"> Com intenção de compra</button>
+        <button class="btn btn-outline-primary" id="available-btn" data-toggle="button" aria-pressed="true" autocomplete="off"> Disponível</button>
       </div>
     <div class="orders-flex-box">
       <% @baskets.each do |basket| %>

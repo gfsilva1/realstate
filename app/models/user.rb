@@ -6,14 +6,14 @@ class User < ApplicationRecord
 
   has_many :favourites
 
-  ROLES = %w[Restaurant Consumer]
+  ROLES = %w[Vendedor Comprador]
   validates :role, inclusion: { in: ROLES }
 
   def restaurant?
-    role == 'Restaurant'
+    role == 'Vendedor'
   end
 
   def consumer?
-    role == 'Consumer'
+    role == 'Comprador'
   end
 end

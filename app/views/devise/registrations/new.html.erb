@@ -3,7 +3,7 @@
     <div class='row full-height justify-content-center'>
       <div class='col-12 text-center align-self-top pt-5'>
         <div class='section pb-1 pt-4 text-center sign'>
-        <h6 class='mb-0 pb-3'><span>Log In</span><span>Sign Up</span></h6>
+        <h6 class='mb-0 pb-3'><span>Log In</span><span>Cadastro</span></h6>
         <label class="switch">
           <input type="checkbox" class='checkbox' checked data-url='<%=new_session_path(resource_name)%>'>
           <span class="slider round"></span>
@@ -15,38 +15,38 @@
             <div class='card-3d-wrapper'>
               <div class='center-wrap back'>
                 <div class='section text-center'>
-                  <h4 class='mb-3 pb-2'>Sign Up</h4>
+                  <h4 class='mb-3 pb-2'>Cadastro</h4>
                   <div class='container'>
                     <div class='form-group'>
                       <%= f.input :email,
                                     required: true,
                                     autofocus: true,
                                     class: 'form-style border border-1 border-white rounded',
-                                    placeholder: "Your Email" %>
+                                    placeholder: "Seu melhor email" %>
                       <i class='input-icon uil uil-at'></i>
                     </div>
                     <div class='form-group mt-2'>
                       <%= f.input :password,
                                   required: true,
-                                  placeholder: "Your Password" %>
+                                  placeholder: "Sua senha" %>
                       <i class='input-icon uil uil-lock-alt'></i>
                     </div>
                     <div class='form-group mt-2'>
                       <%= f.input :password_confirmation,
                                   required: true,
-                                  placeholder: "Your Password" %>
+                                  placeholder: "Repita sua senha" %>
                       <i class='input-icon uil uil-lock-alt'></i>
                     </div>
                     <div class='form-group mt-2'>
                       <%= f.input :role,
                                   required: true,
                                   collection: User::ROLES,
-                                  label: 'Are you a Restaurant or a Consumer?'%>
+                                  label: 'Comprador ou vendedor?'%>
                       <i class='input-icon uil uil-lock-alt'></i>
                     </div>
                   </div>
                   <div class="form-actions">
-                    <%= f.button :submit, "Sign Up", class: 'btn-sign mb-1 mt-3 rounded-3' %>
+                    <%= f.button :submit, "Cadastrar", class: 'btn-sign mb-1 mt-3 rounded-3' %>
                   </div>
                 </div>
               </div>
