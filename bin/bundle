@@ -1,4 +1,4 @@
-#!/app/bin/ruby
+#!/usr/bin/env ruby.exe
 # frozen_string_literal: true
 
 #
