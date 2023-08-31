@@ -1,0 +1,4 @@
+vendor/bundle~/ruby/3.1.0/extensions/x86_64-darwin-21/3.1.0/mini_racer-0.6.3/mini_racer_extension.bundle filter=lfs diff=lfs merge=lfs -text
+vendor/bundle~/ruby/3.1.0/gems/libv8-node-16.10.0.0-x86_64-darwin/vendor/v8/x86_64-darwin/libv8/obj/libv8_monolith.a filter=lfs diff=lfs merge=lfs -text
+vendor/bundle~/ruby/2.7.0/extensions/x86_64-darwin-21/2.7.0/mini_racer-0.4.0/mini_racer_extension.bundle filter=lfs diff=lfs merge=lfs -text
+vendor/bundle~/ruby/2.7.0/gems/libv8-node-15.14.0.1-x86_64-darwin-21/vendor/v8/out.gn/libv8/obj/libv8_monolith.a filter=lfs diff=lfs merge=lfs -text
