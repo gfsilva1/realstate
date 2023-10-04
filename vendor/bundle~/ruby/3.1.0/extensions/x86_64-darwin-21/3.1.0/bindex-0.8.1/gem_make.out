@@ -1,5 +1,5 @@
 current directory: /Users/guilherme.t.silva/Documents/gui/realstate/realstate/vendor/bundle~/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
-/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231004-84503-a0vuwo.rb extconf.rb
+/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231004-92880-xrnqf7.rb extconf.rb
 creating Makefile
 
 current directory: /Users/guilherme.t.silva/Documents/gui/realstate/realstate/vendor/bundle~/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
@@ -13,4 +13,4 @@ ld: warning: -undefined dynamic_lookup may not work with chained fixups
 
 current directory: /Users/guilherme.t.silva/Documents/gui/realstate/realstate/vendor/bundle~/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20231004-84503-z5lll9/skiptrace/internal
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20231004-92880-246c6n/skiptrace/internal

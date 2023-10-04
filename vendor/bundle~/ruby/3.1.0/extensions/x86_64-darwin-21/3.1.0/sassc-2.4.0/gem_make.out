@@ -1,5 +1,5 @@
 current directory: /Users/guilherme.t.silva/Documents/gui/realstate/realstate/vendor/bundle~/ruby/3.1.0/gems/sassc-2.4.0/ext
-/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231004-84503-5iane5.rb extconf.rb
+/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231004-92880-xbdt8e.rb extconf.rb
 creating Makefile
 
 current directory: /Users/guilherme.t.silva/Documents/gui/realstate/realstate/vendor/bundle~/ruby/3.1.0/gems/sassc-2.4.0/ext
@@ -88,4 +88,4 @@ ld: warning: -undefined dynamic_lookup may not work with chained fixups
 
 current directory: /Users/guilherme.t.silva/Documents/gui/realstate/realstate/vendor/bundle~/ruby/3.1.0/gems/sassc-2.4.0/ext
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20231004-84503-qu7jr1/sassc
+/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20231004-92880-km7pky/sassc

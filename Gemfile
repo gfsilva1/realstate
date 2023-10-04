@@ -72,7 +72,6 @@ gem 'geocoder'
 
 gem 'pundit'
 
-
 gem "bootstrap", "~> 5.2"
 
 gem "importmap-rails", "~> 1.2"

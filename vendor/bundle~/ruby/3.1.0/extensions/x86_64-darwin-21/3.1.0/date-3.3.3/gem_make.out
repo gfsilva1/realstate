@@ -1,5 +1,5 @@
 current directory: /Users/guilherme.t.silva/Documents/gui/realstate/realstate/vendor/bundle~/ruby/3.1.0/gems/date-3.3.3/ext/date
-/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231004-84503-df54op.rb extconf.rb
+/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231004-92880-njimlr.rb extconf.rb
 checking for rb_category_warn()... yes
 checking for timezone in time.h with  -Werror... yes
 checking for altzone in time.h with  -Werror... no
@@ -19,4 +19,4 @@ ld: warning: -undefined dynamic_lookup may not work with chained fixups
 
 current directory: /Users/guilherme.t.silva/Documents/gui/realstate/realstate/vendor/bundle~/ruby/3.1.0/gems/date-3.3.3/ext/date
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 date_core.bundle ./.gem.20231004-84503-x6y3zo
+/usr/bin/install -c -m 0755 date_core.bundle ./.gem.20231004-92880-qbkbrr
