@@ -1,5 +1,5 @@
-current directory: /Users/guilherme.t.silva/Documents/gui/basket/green-basket/vendor/bundle~/ruby/3.1.0/gems/nio4r-2.5.9/ext/nio4r
-/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20230510-5548-ajfbgu.rb extconf.rb
+current directory: /Users/guilherme.t.silva/Documents/gui/realstate/realstate/vendor/bundle~/ruby/3.1.0/gems/nio4r-2.5.9/ext/nio4r
+/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231002-95780-1fhjrq.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for linux/io_uring.h... no
@@ -12,10 +12,10 @@ checking for port_event_t in port.h... no
 checking for sys/resource.h... yes
 creating Makefile
 
-current directory: /Users/guilherme.t.silva/Documents/gui/basket/green-basket/vendor/bundle~/ruby/3.1.0/gems/nio4r-2.5.9/ext/nio4r
+current directory: /Users/guilherme.t.silva/Documents/gui/realstate/realstate/vendor/bundle~/ruby/3.1.0/gems/nio4r-2.5.9/ext/nio4r
 make DESTDIR\= clean
 
-current directory: /Users/guilherme.t.silva/Documents/gui/basket/green-basket/vendor/bundle~/ruby/3.1.0/gems/nio4r-2.5.9/ext/nio4r
+current directory: /Users/guilherme.t.silva/Documents/gui/realstate/realstate/vendor/bundle~/ruby/3.1.0/gems/nio4r-2.5.9/ext/nio4r
 make DESTDIR\=
 compiling bytebuffer.c
 bytebuffer.c:308:20: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
@@ -288,6 +288,6 @@ compiling selector.c
 linking shared-object nio4r_ext.bundle
 ld: warning: -undefined dynamic_lookup may not work with chained fixups
 
-current directory: /Users/guilherme.t.silva/Documents/gui/basket/green-basket/vendor/bundle~/ruby/3.1.0/gems/nio4r-2.5.9/ext/nio4r
+current directory: /Users/guilherme.t.silva/Documents/gui/realstate/realstate/vendor/bundle~/ruby/3.1.0/gems/nio4r-2.5.9/ext/nio4r
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20230510-5548-24ojbd
+/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20231002-95780-db1i2i
