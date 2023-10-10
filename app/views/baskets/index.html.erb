@@ -49,17 +49,6 @@ https://images.unsplash.com/photo-1576941089067-2de3c901e126?ixlib=rb-4.0.3&ixid
                   <img src="<%=basket_array.sample%>" height="321" width="250">
                 <%end%>
               </div>
-              <div class="bookmark-heart">
-              <% if favourite = Favourite.find_by(user: current_user, basket: basket)  %>
-                  <%= link_to favourite_path(favourite), method: :delete, remote: true  do %>
-                    <i class='fas fa-heart align-self-center text-center '></i>
-                  <% end %>
-              <% else %>
-                  <%= link_to basket_favourites_url(basket),method: :post, remote: true do %>
-                    <i class='far fa-heart align-self-center text-center '></i>
-                  <% end %>
-              <%end%>
-              </div>
               <div class="product-info">
                 <div class="product-text">
                 <% if basket.name == '' || basket.name.include?('Faker') %>
@@ -74,10 +63,6 @@ https://images.unsplash.com/photo-1576941089067-2de3c901e126?ixlib=rb-4.0.3&ixid
                   <p><%= basket.price %> R$</p>
                   <div class="product-price-btn">
                     <% if user_signed_in? && current_user.restaurant?%>
-                      <%= link_to basket_url(basket) do  %>
-                      <button type="button">details</button>
-                      <% end  %>
-                    <% else %>
                       <%= link_to basket_url(basket) do  %>
                       <button type="button">details</button>
                       <% end  %>

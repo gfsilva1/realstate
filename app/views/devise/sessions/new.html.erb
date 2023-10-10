@@ -2,16 +2,12 @@
   <div class='container'>
     <div class='row full-height justify-content-center'>
       <div class='col-12 text-center align-self-top pt-5'>
-        <div class='section pb-1 pt-5 text-center'>
-        <h6 class='mb-0 pb-3'><span>Não tem login? <%= link_to "Cadastre", new_user_registration_path %></span></h6>
-        <br>
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="form-inputs">
           <div class='card-3d-wrap mt-auto pt-5'>
             <div class='card-3d-wrapper'>
               <div class='center-wrap front'>
                 <div class='section text-center'>
-                  <h4 class='mb-3 pb-2'>Log In</h4>
                   <div class='container'>
                     <div class='form-group'>
                       <%= f.input :email,
@@ -19,7 +15,7 @@
                                     autofocus: true,
                                     name: 'logemail',
                                     class: 'form-style border border-1 border-white rounded',
-                                    placeholder: "Your Email",
+                                    placeholder: "Seu melhor email",
                                     id: 'logemail',
                                     input_html: { autocomplete: "email" } %>
                       <i class='input-icon uil uil-at'></i>
@@ -30,7 +26,7 @@
                                   name: 'logepass',
                                   id: 'logepass',
                                   class: 'form-style border border-1 border-white rounded',
-                                  placeholder: "Your Password",
+                                  placeholder: "Sua senha",
                                   input_html: { autocomplete: "current-password" } %>
                       <i class='input-icon uil uil-lock-alt'></i>
                     </div>
@@ -40,6 +36,7 @@
                   <div class="form-actions">
                     <%= f.button :submit, "Log in", class: 'btn-log mb-1 mt-3 rounded-3' %>
                   </div>
+                  <h4 class='mb-3 pb-2'><%= link_to "Signup", new_registration_path(resource_name), {:style=>'text-decoration:none;color:#FFFFFF' } %></h4>
                 </div>
               </div>
             </div>

@@ -85,7 +85,6 @@ https://images.unsplash.com/photo-1565809655810-3973da946da1?ixid=MnwxMjA3fDB8MH
           <div class="card-content">
             <h2><%= basket.name %></h2>
             <p>R$ <%= basket.price %></p>
-            <p>Stock: <%= basket.stock %></p>
             <p><strong><%= basket.status.capitalize %></strong></p>
               <button class="btn btn-block btn-outline-primary show-orders-button" data-toggle="button" data-basketId ='<%=basket.id%>' aria-pressed="false" autocomplete="off"><strong><%=basket.orders.count%></strong> orders</button>
             <div class="basket-orders">
