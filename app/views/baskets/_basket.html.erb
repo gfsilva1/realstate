@@ -1,0 +1,40 @@
+  <%= turbo_frame_tag basket do %>
+    <div class="container pt-3">
+      <div class="row">
+          <div class="col-md-12 col-sm-12 col-xl-6">
+            <div class="basket-card">
+              <div class="wrapper">
+                <div class="product-img">
+                  <% if basket.photo.attached? %>
+                    <%= cl_image_tag basket.photo.key, height: 321, width: 250, crop: :fill %>
+                  <% else%>
+                    <img src="<%=basket_array.sample%>" height="321" width="250">
+                  <%end%>
+                </div>
+                <div class="product-info">
+                  <div class="product-text">
+                  <% if basket.name == '' || basket.name.include?('Faker') %>
+                    <h1>Basket #<%=basket.id%></h1>
+                  <% else %>
+                    <h1><%= basket.name %></h1>
+                  <% end %>
+                    <h2>by <%= User.find(basket.user_id).email.split('@').first %></h2>
+                    <p><%=basket.description%> </p>
+                  </div>
+                  <div class="price-flex">
+                    <p><%= basket.price %> R$</p>
+                    <div class="product-price-btn">
+                      <% if user_signed_in? %>
+                        <%= link_to basket_url(basket), data: { turbo_frame: "_top"} do  %>
+                          <button type="button">details</button>
+                        <% end  %>
+                      <% end %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  <% end %>

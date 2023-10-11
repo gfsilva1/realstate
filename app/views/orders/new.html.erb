@@ -1,3 +1,6 @@
-<%= simple_form_for [@basket, @order] do |f| %>
-  <%= f.submit %>
-<%  end  %>
+<%= turbo_frame_tag id="proposta" do%>
+  <%= simple_form_for [@basket, @order], html: { data: { turbo_frame: "_top" } } do |f| %>
+    <%= f.input :price %>
+    <%= f.submit %>
+  <%  end  %>
+<% end %>

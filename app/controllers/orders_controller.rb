@@ -9,14 +9,13 @@ class OrdersController < ApplicationController
     @basket = Basket.find(params[:basket_id])
     @order = Order.new
     authorize @order
-    create
   end
 
   def create
     basket = Basket.find(params[:basket_id])
     @order = Order.new
     authorize @order
-    @order.price = basket.price
+    @order.price = params[:order][:price]
     @order.status = 'requested'
     @order.basket_id = basket.id
     @order.user_id = current_user.id

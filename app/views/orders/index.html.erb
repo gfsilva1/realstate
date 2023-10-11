@@ -52,9 +52,11 @@ https://images.unsplash.com/photo-1565809655810-3973da946da1?ixid=MnwxMjA3fDB8MH
                     <img src="<%= basket_array.sample%>" height="150" width="200">
                   <%end%>
                 </div>
-                <h2><%= order.basket.name %></h2>
-                <p>R$ <%= order.price %></p>
-
+                <h5><%= order.basket.name %></h5>
+                <h5>Preço</h5>
+                  R$<%= order.basket.price %>
+                <h5>Proposta</h5 >
+                   R$ <%= order.price %>
                 <p><strong><%= order.status.capitalize %></strong></p>
               </div>
             </div>

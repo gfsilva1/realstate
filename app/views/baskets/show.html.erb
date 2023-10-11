@@ -53,8 +53,10 @@ https://images.unsplash.com/photo-1576941089067-2de3c901e126?ixlib=rb-4.0.3&ixid
       <div class="price-flex">
         <p><%= @basket.price %> R$</p>
         <div class="product-price-btn">
-          <%= link_to  new_basket_order_path(@basket) do %>
-          <button type="button"><a href="https://wa.me/+5511984320432" target="_blank">Fazer proposta</a></button>
+          <%= turbo_frame_tag id="proposta" do  %>
+            <%= link_to new_basket_order_path(@basket) do %>
+              <button type="button">Fazer proposta</button>
+            <% end %>
           <% end %>
         </div>
       </div>
@@ -66,11 +68,10 @@ https://images.unsplash.com/photo-1576941089067-2de3c901e126?ixlib=rb-4.0.3&ixid
         <script>
           mapboxgl.accessToken = 'pk.eyJ1IjoiZ3RleDEiLCJhIjoiY2xoY245dmR4MTJyajNjbzdkZnE5a3pkbCJ9.fopXMTpIGQW4hTHcXDKSPw';
         const map = new mapboxgl.Map({
-        container: 'map', // container ID
-        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-        style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-47.4935102, -23.4823052], // starting position [lng, lat]
-        zoom: 9 // starting zoom
+        container: 'map', 
+        style: 'mapbox://styles/mapbox/streets-v12', 
+        center: [-47.4935102, -23.4823052], 
+        zoom: 9 
         });
         </script>
     </div>
